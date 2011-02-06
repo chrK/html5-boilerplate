@@ -1,0 +1,58 @@
+/**
+ *
+ *   Strange Curly Brackets
+ *   	If you're wondering what these strange curly brackets in the comments are for:
+ *		They enhance Textmate's Code Folding (as in CSSEdit & Co.)
+ *		You just have to add start and stop markers to its CSS-Bundle
+ *		http://lists.macromates.com/textmate/2009-August/029360.html
+ *
+ */
+
+/* { =Variables */ 
+    
+    /* Font Families */
+        @bodyFont: Georgia, "Times New Roman", Times, serif;
+        @headlineFont: Georgia, "Times New Roman", Times, serif;
+        @smallHeadlineFont: Georgia, "Times New Roman", Times, serif; 
+        @codeFont: Consolas, "Courier New", Courier, monospace;
+        
+    /* Colors */
+        @bodyBgColor: #fff;
+        @bodyColor: #444;
+    
+        @linkColor: #607890;
+        @linkHoverColor: #036;
+        
+        
+/* end : variables } */
+
+@import 'reset.less';
+@import 'fixes.less';
+@import 'helpers.less';
+@import 'typography.less';
+
+
+/*
+ * media queries for responsive design
+ * these follow after primary styles so they will successfully override.
+ */
+
+@media all and (orientation:portrait) {
+  /* style adjustments for portrait mode goes here */
+
+}
+
+@media all and (orientation:landscape) {
+  /* style adjustments for landscape mode goes here */
+
+}
+
+/* Grade-A Mobile Browsers (Opera Mobile, Mobile Safari, Android Chrome)
+   consider this: www.cloudfour.com/css-media-query-for-mobile-is-fools-gold/ */
+@media screen and (max-device-width: 480px) {
+
+
+  /* uncomment if you don't want iOS and WinMobile to mobile-optimize the text for you
+     j.mp/textsizeadjust
+  html { -webkit-text-size-adjust:none; -ms-text-size-adjust:none; } */
+}
